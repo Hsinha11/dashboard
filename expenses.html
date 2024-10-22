@@ -11,7 +11,7 @@
         <aside class="sidebar">
             <h2>Track It</h2>
             <ul>
-                <li><a href="#">Dashboard</a></li>
+                <li><a href="index.html">Dashboard</a></li>
                 <li><a href="expenses.html">Expenses</a></li>
                 <li><a href="#">Budget</a></li>
                 <li><a href="#">Settings</a></li>
@@ -28,7 +28,9 @@
 
             <section id="expenseList" class="expense-list">
                 <!-- Sample expense cards to show how they would look -->
-                <div class="expense-card">
+                
+
+                <div class="expense-card" data-id="1">
                     <div class="expense-info">
                         <h4>Office Commutation</h4>
                         <p>24 Oct 2024, Thursday</p>
@@ -39,29 +41,10 @@
                         <span class="category-label fuel">Fuel</span>
                     </div>
                     <div class="expense-options">
-                        <button class="kebab-menu">&#x22EE;</button>
-                        <div class="dropdown-menu">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="expense-card">
-                    <div class="expense-info">
-                        <h4>Evening Vegetables</h4>
-                        <p>15 Oct 2024, Thursday</p>
-                        <p>Vegetables for weekend</p>
-                    </div>
-                    <div class="expense-amount">
-                        <span>₹500.00</span>
-                        <span class="category-label grocery">Grocery</span>
-                    </div>
-                    <div class="expense-options">
-                        <button class="kebab-menu">&#x22EE;</button>
-                        <div class="dropdown-menu">
-                            <button class="edit">Edit</button>
-                            <button class="delete">Delete</button>
+                        <button class="kebab-menu" onclick="toggleKebabMenu(1)">&#x22EE;</button>
+                        <div id="kebab-options-1" class="dropdown-menu">
+                            <button class="edit" onclick="editExpense(1)">Edit</button>
+                            <button class="delete" onclick="deleteExpense(1)">Delete</button>
                         </div>
                     </div>
                 </div>
