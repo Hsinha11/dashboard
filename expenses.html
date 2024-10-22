@@ -23,12 +23,17 @@
                 <h1>Expenses</h1>
                 <button id="addExpenseBtn" class="add-button">Add Expense</button>
                 <input type="text" id="searchExpense" class="search-bar" placeholder="Search expenses...">
+                <div class="sort-buttons">
+                    <button id="sortAscBtn">Sort by Date Asc</button>
+                    <button id="sortDescBtn">Sort by Date Desc</button>
+                </div>
             </header>
 
 
             <section id="expenseList" class="expense-list">
                 <!-- Sample expense cards to show how they would look -->
-                
+                <div id="loader" style="display: none;">Loading...</div>
+
 
                 <div class="expense-card" data-id="1">
                     <div class="expense-info">

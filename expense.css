@@ -284,3 +284,12 @@ body {
         margin-top: 10px;
     }
 }
+#loader {
+    position: absolute; /* or relative based on your layout */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #333; /* You can change the color */
+    z-index: 10; /* Ensure it's above other elements */
+}
